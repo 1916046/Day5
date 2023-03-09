@@ -10,6 +10,10 @@ const App =()=>{
  }
 
  const createList = () =>{
+       if(inputList.trim()==='')
+       {alert('Please enter Valid Task!');
+       return;}
+       
        newaddedlist((oldList) =>{
           return [...oldList, inputList]
        });
